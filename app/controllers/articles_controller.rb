@@ -1,6 +1,9 @@
 class ArticlesController < ApplicationController
   before_action :set_article, only: %i[ show edit update destroy ]
 
+  def homepage
+    @articles = Article.all
+  end
   # GET /articles
   def index
     @articles = Article.all

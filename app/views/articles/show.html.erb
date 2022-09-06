@@ -1,8 +1,6 @@
 <p style="color: green"><%= notice %></p>
 
 <%= render @article %>
-
-<%= @article.title %>
 <%= cl_image_tag @article.photo.key, height: 300, width: 400, crop: :fill %>
 
 <div>
