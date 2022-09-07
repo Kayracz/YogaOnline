@@ -4,6 +4,11 @@ class ArticlesController < ApplicationController
   def homepage
     @articles = Article.all
   end
+
+  def about
+    @articles = Article.all
+  end
+  
   # GET /articles
   def index
     @articles = Article.all
