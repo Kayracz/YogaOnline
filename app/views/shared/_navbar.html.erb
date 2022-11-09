@@ -1,6 +1,25 @@
-<%= link_to "Home", root_path %>
-<%= link_to "About", about_path %>
-<%= link_to "Contact", root_path %>
-<%= link_to "Store", store_path %>
-<%= link_to "Classes Offered", root_path %>
-<%= link_to "Price packages", root_path %>
+
+<div class="navbar-test">
+<div class="navbar-background">
+
+<%= link_to root_path, class: "navbar-wagon-brand" do %>
+<span class="logo"><%= image_tag 'logo.jpg', class: "logo-size "%> </span>
+ <% end %>
+
+<div class="middle">
+<ul>
+ <li><%= link_to "About", about_path %></li>
+ <li><%= link_to "Classes", classes_path %></li>
+ <li> <%= link_to "Pricing", price_path %></li>
+ <li> <%= link_to "Workshop", store_path %></li>
+ <li> <%= link_to "Contact us", contact_path %></li>
+</ul>
+</div>
+
+<div class="right">
+<button class="button-green">Book a class</button>
+</div>
+
+
+</div>
+</div>

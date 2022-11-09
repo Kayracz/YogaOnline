@@ -1,1 +1,145 @@
 @import "bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&family=Lato:wght@300&family=Lora:wght@500;700&display=swap');
+
+/* general */
+body {
+    font-family: 'Inter', sans-serif;
+    margin:0px;
+}
+h1 {
+    font-family: 'Lora', serif;
+    font-weight: 700;
+    font-size: 50px;
+    color: #2E5A52;
+    text-align: center;
+}
+h3{
+    font-size: 18px;
+    color: #C5A840;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.homepage-container{
+    margin-top: 158px;
+}
+.main-text{
+    margin-top: 41px;
+    margin-bottom: 0px;
+}
+.button-green{
+  height: 37px;
+  background: #2E5A52;
+  color:white;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border:none;
+  border-radius: 6px;
+  padding: 5px 19px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.init-title{
+    font-size: 10px;
+    color: #C5A840;
+    text-transform: uppercase;
+    font-family: 'Inter';
+    letter-spacing: 8px;
+    margin: 10px
+}
+.section-container{
+    background: #F2F2F2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 0px 60px 0px;
+    margin: 106px 0px 50px 0px;
+}
+.section-title{
+color: #2E5A52;
+font-size: 31px;
+text-transform: uppercase;
+font-family: 'Lora';
+font-weight: 700;
+}
+.section-text{
+color: #2E5A52;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 300;
+max-width: 579px;
+font-size: 14px;
+margin: 10px;
+text-align: center;
+}
+
+/* navbar */
+.logo-size{
+    width: 144px;
+    height: 80px;
+}
+.navbar-test{
+    position: fixed;
+    width: 100%;
+    top: 0px;
+}
+.navbar-background {
+    background-color: white;
+    color:#2E5A52;
+    padding: 5px 21px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 0.5px solid #dfdfdf;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+}
+.navbar-background ul {
+    background-color: white;
+    display: flex;
+    padding-left: 0px;
+}
+.navbar-background li {
+    list-style-type: none;
+    margin: 10px;
+    padding-right: 25px;
+}
+.navbar-background li a {
+    text-decoration: none;
+    color: #2E5A52;
+    font-weight: 300;
+}
+/* homepage */
+.subtitle-container{
+    display: flex;
+    justify-content: center;
+    margin-top:5px;
+}
+.subtitle-container ul{
+    display:flex;
+    margin: 0px;
+    padding: 0px;
+}
+.subtitle-container li {
+    margin: 12px;
+}
+.image-carousel-cont{
+    margin: 0 auto;
+    max-width: 614px;
+}
+.homepage-images{
+    width: 100%;
+}
+.subtitle-words{
+    text-transform: uppercase;
+    color: #2E5A52;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+}
+.main-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 33px;
+}
