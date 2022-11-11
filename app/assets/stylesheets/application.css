@@ -198,10 +198,15 @@ margin: 50px 0px;
     max-width: 1006px;
     margin: 0 auto;
 }
-
 .line{
     border: 0.5px solid #C5A840;
     color: #C5A840;
     width: 100%;
+}
+.consultation{
+    margin: 0 auto;
+    text-align: center;
+    width: 500px;
+    padding-bottom: 51px;
 }
 
