@@ -211,4 +211,49 @@ margin: 50px 0px;
     width: 500px;
     padding-bottom: 51px;
 }
-
+/* about */
+.image-about-cont{
+    margin: 0 auto;
+    max-width: 880px;
+    padding: 40px 0px;
+}
+.card-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.card-border{
+    background: #2E5A52;
+    width: 284px;
+    height: 367px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 4px;
+    margin: 20px;
+}
+.image-card-cont{
+    height: 281px;
+    overflow:hidden;
+    padding: 10px 10px;
+}
+.init-card{
+    font-size: 13px;
+    color: #f4f4f4;
+    text-transform: uppercase;
+    font-family: 'Inter';
+    letter-spacing: 8px;
+    margin-top: 15px;
+}
+.card-subtitle{
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+color: #C5A840;
+margin-top: 5px;
+}
+.card-images{
+   height: 281px;
+   width: 258px;
+}
