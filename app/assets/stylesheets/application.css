@@ -221,9 +221,9 @@ margin: 50px 0px;
     display: flex;
     justify-content: center;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 .card-border{
-    background: #2E5A52;
     width: 284px;
     height: 367px;
     display: flex;
@@ -233,16 +233,18 @@ margin: 50px 0px;
     margin: 20px;
 }
 .image-card-cont{
-    height: 281px;
-    overflow:hidden;
-    padding: 10px 10px;
+    height: 309px;
+    padding: 7px 10px;
+    border-radius: 4px;
+    height: 309px;
+    border-radius: 4px;
 }
 .init-card{
     font-size: 13px;
-    color: #f4f4f4;
+    color: #2e5a52;
     text-transform: uppercase;
     font-family: 'Inter';
-    letter-spacing: 8px;
+    letter-spacing: 4px;
     margin-top: 15px;
 }
 .card-subtitle{
@@ -254,6 +256,29 @@ color: #C5A840;
 margin-top: 5px;
 }
 .card-images{
-   height: 281px;
-   width: 258px;
+    height: 280px;
+    width: 263px;
+    background: #2e5a52;
+    padding: 9px 10px;
+    border-radius: 6px;
 }
+.section-policies{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 80px 0px;
+}
+.numerals{
+    list-style-type: decimal;
+    text-align: left;
+}
+
+
+  /* Responsive columns - one column layout (vertical) on small screens */
+  @media screen and (max-width: 994px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
