@@ -272,7 +272,64 @@ margin-top: 5px;
     list-style-type: decimal;
     text-align: left;
 }
-
+/* classes */
+.subtitle{
+    color: #C5A840;
+    font-family: 'Inter';
+    max-width: 593px;
+    margin: 0 auto;
+    padding: 16px;
+    line-height: 23px;
+    font-weight: 300;
+}
+.class-container{
+    display: flex;
+    padding: 60px 0px 60px 0px;
+    margin: 106px 0px 50px 0px;
+    max-width: 880px;
+    align-items: center;
+    margin: 0 auto;
+    flex-direction: column;
+}
+.class-text{
+    color: #2E5A52;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    margin: 16px 0px;
+}
+.classes-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.classes-container a {
+    text-decoration: none;
+}
+.class-border{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 4px;
+    margin: 20px;
+    background: #2e5a52;
+}
+.class-images{
+    height: 89px;
+    width: 127px;
+    padding: 9px 10px;
+    border-radius: 6px;
+}
+.class-subtitle{
+    color: white;
+    font-size: 14px;
+    font-weight: 300;
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
 
   /* Responsive columns - one column layout (vertical) on small screens */
   @media screen and (max-width: 994px) {
