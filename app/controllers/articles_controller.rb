@@ -8,6 +8,18 @@ class ArticlesController < ApplicationController
   def about
     @articles = Article.all
   end
+
+  def classes
+    @articles = Article.all
+  end
+
+  def price
+    @articles = Article.all
+  end
+
+  def contact
+    @articles = Article.all
+  end
   
   # GET /articles
   def index
