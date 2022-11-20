@@ -8,7 +8,7 @@ Workshops
 <div id="articles">
   <% @articles.each do |article| %>
     <%= render article %>
-    <%= cl_image_tag article.photo.key, height: 300, width: 400, crop: :fill %>
+    <%# <%= cl_image_tag article.photo.key, height: 300, width: 400, crop: :fill %> %>
     <p>
       <%= link_to "Show this article", article %>
     </p>
