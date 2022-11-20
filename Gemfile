@@ -30,6 +30,8 @@ gem "dotenv-rails", groups: [:development, :test]
 
 gem "cloudinary"
 
+gem 'better_errors', '~> 2.9', '>= 2.9.1'
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 
