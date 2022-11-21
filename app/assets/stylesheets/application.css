@@ -27,7 +27,7 @@ h3{
     margin-bottom: 0px;
 }
 .button-green{
-  height: 37px;
+    height: 32px;
   background: #2E5A52;
   color:white;
   border:none;
@@ -35,6 +35,9 @@ h3{
   padding: 5px 19px;
   font-size: 16px;
   cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
 }
 .button-yellow{
     height: 37px;
@@ -343,7 +346,7 @@ margin-top: 5px;
 .price-container{
     color: #2E5A52;
     display: flex;
-    max-width: 900px;
+    max-width: 863px;
     justify-content: space-between;
     margin: 0 auto;
 }
@@ -370,6 +373,24 @@ margin-top: 5px;
     max-width: 1006px;
     margin: 0 auto;
 }
+.map-container{
+    display: flex;
+justify-content: center;
+    margin: 0 auto;
+    padding-top:40px;
+}
+.map-title{
+    display: flex;
+    color: #2e5a52;
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+margin-bottom: 10px;
+}
+.map-frame{
+    width:584px;
+    margin:10px;
+}
 
   /* Responsive columns - one column layout (vertical) on small screens */
   @media screen and (max-width: 994px) {
@@ -382,6 +403,12 @@ margin-top: 5px;
 
   @media screen and (max-width: 760px) {
     .price-container{
+        flex-direction: column;
+    }
+  }
+
+  @media screen and (max-width: 366px) {
+    .prices{
         flex-direction: column;
     }
   }
