@@ -51,7 +51,7 @@ h3{
     color: #C5A840;
     text-transform: uppercase;
     font-family: 'Inter';
-    letter-spacing: 8px;
+    letter-spacing: 5px;
     margin: 10px
 }
 .section-container{
@@ -327,6 +327,49 @@ margin-top: 5px;
     margin-top: 0px;
     margin-bottom: 10px;
 }
+/* workshops */
+.subtitle-workshop{
+    color: #2E5A52;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 16px;
+    font-size:20px;
+    line-height: 23px;
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 700;
+}
+/* prices */
+.price-container{
+    color: #2E5A52;
+    display: flex;
+    max-width: 900px;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.price-title h4{
+  font-size: 25px;
+  font-family: 'Lora';
+  max-width: 394px;
+  margin-top: 24px;
+}
+.price-title p {
+    font-size: 16px;
+    font-weight: 300;
+}
+.prices{
+    display: flex;
+    line-height: 40px;
+    font-weight: 300;
+}
+.prices ul{
+    list-style: none;
+}
+.price-line{
+    padding: 20px 0px;
+    max-width: 1006px;
+    margin: 0 auto;
+}
 
   /* Responsive columns - one column layout (vertical) on small screens */
   @media screen and (max-width: 994px) {
@@ -334,5 +377,11 @@ margin-top: 5px;
       width: 100%;
       display: block;
       margin-bottom: 20px;
+    }
+  }
+
+  @media screen and (max-width: 760px) {
+    .price-container{
+        flex-direction: column;
     }
   }
