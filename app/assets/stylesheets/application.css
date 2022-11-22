@@ -409,14 +409,13 @@ font-weight: 600;
 margin-bottom: 10px;
 }
 .map-frame{
-    width:584px;
+    width: 584px;
     margin:10px;
 }
 .contact-container{
     display: flex;
     color: #2E5A52;
     justify-content: center;
-    padding: 25px;
     margin: 0 auto;
 }
 .info-container{
@@ -481,6 +480,9 @@ margin-bottom: 10px;
 #toggle {
     display: none;
 }
+.normal-size-title{
+    font-size:45px
+}
 
   /* Responsive columns - one column layout (vertical) on small screens */
   @media screen and (max-width: 994px) {
@@ -509,7 +511,9 @@ margin-bottom: 10px;
 
     .homepage-container{
         padding: 0px 17px;
+        margin-top: 121px;
     }
+
   }
   @media screen and (max-width: 760px) {
     .price-container{
@@ -542,11 +546,32 @@ margin-bottom: 10px;
     .init-title{
         margin: 20px 0px 6px;
     }
+    .contact-container{
+        flex-direction: column;
+    }
+    .info-container{
+        width:100%;
+    }
   }
 
+  @media screen and (max-width: 600px) {
+  .map-container{
+    align-items: center;
+    flex-direction: column;
+  }
+  .map-frame{
+      width: 100%;
+  }
+}
 
   @media screen and (max-width: 569px) {
 .main-text{
+    font-size: 36px;
+}
+.subtitle-container ul {
+    font-size: 12px;
+}
+.normal-size-title{
     font-size: 36px;
 }
 .h3{
