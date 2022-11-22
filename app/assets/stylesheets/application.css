@@ -145,7 +145,6 @@ margin: 16px 0px;
 }
 .homepage-images{
     width: 100%;
-    border-radius: 10px;
 }
 .subtitle-words{
     text-transform: uppercase;
@@ -178,7 +177,7 @@ margin: 16px 0px;
     margin-left: 50px;
 }
 .studio-two{
-    width: 500px;
+    max-width: 500px;
     text-align: left;
 }
 .image-studio-cont{
@@ -357,9 +356,9 @@ margin-top: 5px;
 }
 .workshop-section {
     display: flex;
-    justify-content: center;
     padding: 25px;
     margin: 0 auto;
+    max-width: 900px;
 }
 /* prices */
 .price-container{
@@ -383,6 +382,7 @@ margin-top: 5px;
     display: flex;
     line-height: 40px;
     font-weight: 300;
+    text-align: left;
 }
 .prices ul{
     list-style: none;
@@ -506,14 +506,72 @@ margin-bottom: 10px;
         left: 10px;
     position: relative;
     }
+
+    .homepage-container{
+        padding: 0px 17px;
+    }
   }
   @media screen and (max-width: 760px) {
     .price-container{
         flex-direction: column;
+        align-items: center;
+    }
+    .prices .pricesfirst{
+        padding-left: 0px;
+    }
+    .studio-section{
+        flex-direction: column;
+        align-items: center;
+    }
+    .studio-section-two{
+        flex-direction: column;
+        align-items: center;
+    }
+    .workshop-section{
+        flex-direction: column;
+    }
+    .studio-musgrave {
+        margin-left: 0px;
+    }
+    .studio-westville{
+    margin-right:0px;
+    }
+    .image-studio-cont{
+        margin: 0px;
+    }
+    .init-title{
+        margin: 20px 0px 6px;
     }
   }
+
+
+  @media screen and (max-width: 569px) {
+.main-text{
+    font-size: 36px;
+}
+.h3{
+    font-size: 14px;
+}
+h1{
+    font-size: 36px;
+}
+.subtitle-words{
+    font-size: 14px;
+}
+.button-title{
+    font-size: 16px;
+}
+  }
+
+
+
   @media screen and (max-width: 366px) {
     .prices{
         flex-direction: column;
+        align-items: center;
     }
+    .prices ul{
+        padding:0px;
+    }
+
   }
