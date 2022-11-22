@@ -141,6 +141,7 @@ margin: 16px 0px;
 }
 .homepage-images{
     width: 100%;
+    border-radius: 10px;
 }
 .subtitle-words{
     text-transform: uppercase;
@@ -178,7 +179,7 @@ margin: 16px 0px;
 }
 .image-studio-cont{
     margin: 0 auto;
-    max-width: 332px;
+    max-width: 278px;
 }
 .studio-section-two{
     display: flex;
