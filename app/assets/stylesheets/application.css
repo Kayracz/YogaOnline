@@ -28,26 +28,31 @@ h3{
 }
 .button-green{
     height: 32px;
-  background: #2E5A52;
-  color:white;
-  border:none;
-  border-radius: 3px;
-  padding: 5px 19px;
-  font-size: 16px;
-  cursor: pointer;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
+    background: #2E5A52;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .button-yellow{
-    height: 37px;
+    height: 32px;
     background: #C5A840;
     color:white;
     border:none;
     border-radius: 3px;
     padding: 5px 19px;
-    font-size: 16px;
+    font-size: 15px;
     cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 .init-title{
     font-size: 10px;
@@ -99,7 +104,6 @@ margin: 16px 0px;
     align-items: center;
     justify-content: space-between;
     border-bottom: 0.5px solid #dfdfdf;
-    /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15)); */
 }
 .navbar-background ul {
     background-color: white;
@@ -373,16 +377,18 @@ margin-top: 5px;
     max-width: 1006px;
     margin: 0 auto;
 }
+/* contact page */
 .map-container{
     display: flex;
 justify-content: center;
     margin: 0 auto;
     padding-top:40px;
+    padding-bottom:40px;
 }
 .map-title{
-    display: flex;
-    color: #2e5a52;
-    font-family: 'Inter';
+display: flex;
+color: #2e5a52;
+font-family: 'Inter';
 font-style: normal;
 font-weight: 600;
 margin-bottom: 10px;
@@ -390,6 +396,31 @@ margin-bottom: 10px;
 .map-frame{
     width:584px;
     margin:10px;
+}
+.contact-container{
+    display: flex;
+    color: #2E5A52;
+    justify-content: center;
+    padding: 25px;
+    margin: 0 auto;
+}
+.info-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    width: 643px;
+}
+.details-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+.info-li{
+    list-style: none;
+    font-weight: 300;
+    padding:0px;
 }
 
   /* Responsive columns - one column layout (vertical) on small screens */
