@@ -151,7 +151,7 @@ margin: 16px 0px;
     justify-content: center;
     text-align: center;
     margin-top: 20px;
-    font-weight: bold;
+    font-weight: 400;
 }
 .main-button{
     display: flex;
