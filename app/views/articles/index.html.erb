@@ -8,17 +8,29 @@ Workshops
 <p class="subtitle" style="max-width: 890px;">
 Our workshops are focused on helping our students gain a deeper knowledge of their bodies; enabling them to improve their movements in and outside the classroom space. We touch on themes that we may not be able to cover during a normal weekly class and deepen both the experience and knowledge of the movement modality being covered during the workshop
 </p>
-
 </div>
+
+<%# <%= link_to "New article", new_article_path %>
 
 <div id="articles">
   <% @articles.each do |article| %>
-    <%= render article %>
-    <%= cl_image_tag article.photo.key, height: 300, width: 400, crop: :fill %>
-    <p>
-      <%= link_to "Show this article", article %>
-    </p>
-  <% end %>
-</div>
-
-<%= link_to "New article", new_article_path %>
+  <div class="workshop-section">
+      <div class="studio-westville">
+         <div class="image-studio-cont">
+          <%= cl_image_tag article.photo.key, class: "homepage-images" %>
+         </div>
+      </div>
+      <div class="studio-two">
+         <div class="init-title">
+            Our Workshops
+         </div>
+         <div class="section-title">
+            <%= article.title %>
+         </div>
+         <div class="section-text">
+          <%= article.description %>
+         </div>
+       </div>
+   </div>
+     <% end %>
+  </div>
