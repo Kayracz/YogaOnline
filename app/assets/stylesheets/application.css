@@ -518,7 +518,8 @@ margin-bottom: 10px;
 .footer-container{
     display: flex;
     justify-content: space-between;
-    margin: 10px 50px;
+    margin: 19px 50px;
+    margin-bottom: 57px;
 }
 .footer-title{
     font-weight:700;
