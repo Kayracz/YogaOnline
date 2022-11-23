@@ -21,10 +21,12 @@ h3{
 .homepage-container{
     margin-top: 158px;
     text-align: center;
+    margin-bottom: 53px;
 }
 .main-text{
     margin-top: 41px;
     margin-bottom: 0px;
+    line-height: 35px;
 }
 .button-green{
     height: 32px;
@@ -96,6 +98,7 @@ margin: 16px 0px;
     position: fixed;
     width: 100%;
     top: 0px;
+    background: white;
 }
 .navbar-background {
     background-color: white;
@@ -105,6 +108,9 @@ margin: 16px 0px;
     align-items: center;
     justify-content: space-between;
     border-bottom: 0.5px solid #dfdfdf;
+}
+.nav-bar-mobile{
+    display: none;
 }
 .navbar-background ul {
     background-color: white;
@@ -141,7 +147,6 @@ margin: 16px 0px;
 }
 .homepage-images{
     width: 100%;
-    border-radius: 10px;
 }
 .subtitle-words{
     text-transform: uppercase;
@@ -151,7 +156,7 @@ margin: 16px 0px;
     justify-content: center;
     text-align: center;
     margin-top: 20px;
-    font-weight: bold;
+    font-weight: 400;
 }
 .main-button{
     display: flex;
@@ -174,7 +179,7 @@ margin: 16px 0px;
     margin-left: 50px;
 }
 .studio-two{
-    width: 500px;
+    max-width: 500px;
     text-align: left;
 }
 .image-studio-cont{
@@ -214,8 +219,8 @@ margin: 50px 0px;
 .consultation{
     margin: 0 auto;
     text-align: center;
-    width: 500px;
-    padding-bottom: 51px;
+    max-width: 500px;
+    padding-bottom: 60px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -307,6 +312,11 @@ margin-top: 5px;
     font-weight: 300;
     font-size: 16px;
     margin: 16px 0px;
+    text-align: left;
+}
+.class-text ul{
+    list-style: none;
+    padding: 0px;
 }
 .classes-container{
     display: flex;
@@ -353,10 +363,34 @@ margin-top: 5px;
 }
 .workshop-section {
     display: flex;
-    justify-content: center;
     padding: 25px;
     margin: 0 auto;
+    max-width: 900px;
 }
+.workshops-video-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+    margin-top: 47px;
+}
+.video-cont{
+    margin:10px;
+}
+.workshop-vids{
+    max-width: 300px;
+}
+.video-title{
+    color:#2E5A52;
+    font-size: 16px;
+    font-weight: 700;
+}
+.extra{
+    max-width: 300px;
+    position: relative;
+    top:39px;
+}
+
 /* prices */
 .price-container{
     color: #2E5A52;
@@ -364,6 +398,9 @@ margin-top: 5px;
     max-width: 863px;
     justify-content: space-between;
     margin: 0 auto;
+}
+.price-title{
+    text-align: left;
 }
 .price-title h4{
   font-size: 25px;
@@ -379,6 +416,7 @@ margin-top: 5px;
     display: flex;
     line-height: 40px;
     font-weight: 300;
+    text-align: left;
 }
 .prices ul{
     list-style: none;
@@ -405,14 +443,13 @@ font-weight: 600;
 margin-bottom: 10px;
 }
 .map-frame{
-    width:584px;
+    width: 584px;
     margin:10px;
 }
 .contact-container{
     display: flex;
     color: #2E5A52;
     justify-content: center;
-    padding: 25px;
     margin: 0 auto;
 }
 .info-container{
@@ -433,24 +470,224 @@ margin-bottom: 10px;
     font-weight: 300;
     padding:0px;
 }
+.nav{
+    text-align: right;
+    border-bottom: 0.5px solid #dfdfdf;
+    position: relative;
+    display: none;
+}
+.menu{
+    background-color:#2e5a52;
+    text-align: center;
+    width: 100%;
+    display: none;
+}
+.menu a{
+    text-decoration: none;
+    color: white;
+}
+.menu ul{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+.menu li{
+    line-height: 33px;
+    border-bottom: 1px solid white;
+    padding: 10px;
+}
+.nav label{
+    font-size: 36px;
+    left: -16px;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    top: 14px;
+    color:#2E5A52;
+    -webkit-tap-highlight-color: transparent;
+}
+#toggle:checked + .menu{
+    display: block;
+    top: 84px;
+    position: absolute;
+}
+#toggle {
+    display: none;
+}
+.normal-size-title{
+    font-size:45px
+}
+.footer-logo{
+    width: 150px;
+    height: 67px;
+    position: relative;
+    top: 10px;
+    left: -27px;
+}
+.footer-lists{
+    list-style: none;
+    margin-right: 47px;
+    color:#dfdfdf;
+    font-weight: 300;
+    margin: 0px;
+}
+.footer-lists a{
+    text-decoration: none;
+    color:#dfdfdf;
+    font-weight: 300;
+}
+.footer{
+    background:#2e5a52;
+    padding:10px;
+}
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    margin: 19px 50px;
+    margin-bottom: 57px;
+}
+.footer-title{
+    font-weight:700;
+    margin-bottom: 5px;
+}
+.icons{
+    font-size: 26px;
+}
+.icons a{
+    color:white;
+    text-decoration: none;
+    margin:5px;
+}
 
-  /* Responsive columns - one column layout (vertical) on small screens */
   @media screen and (max-width: 994px) {
     .column {
       width: 100%;
       display: block;
       margin-bottom: 20px;
     }
+    .nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    .navbar-background{
+        display: none;
+    }
+    .nav-bar-mobile{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: white;
+    }
+    .logo{
+        left: 10px;
+    position: relative;
+    }
+    .homepage-container{
+        padding: 0px 17px;
+        margin-top: 121px;
+    }
   }
-
   @media screen and (max-width: 760px) {
     .price-container{
         flex-direction: column;
+        align-items: center;
+    }
+    .prices .pricesfirst{
+        padding-left: 0px;
+    }
+    .studio-section{
+        flex-direction: column;
+        align-items: center;
+    }
+    .studio-section-two{
+        flex-direction: column;
+        align-items: center;
+    }
+    .workshop-section{
+        flex-direction: column;
+    }
+    .studio-musgrave {
+        margin-left: 0px;
+    }
+    .studio-westville{
+    margin-right:0px;
+    }
+    .image-studio-cont{
+        margin: 0px;
+    }
+    .init-title{
+        margin: 20px 0px 6px;
+    }
+    .contact-container{
+        flex-direction: column;
+    }
+    .info-container{
+        width:100%;
     }
   }
+
+  @media screen and (max-width: 600px) {
+  .map-container{
+    align-items: center;
+    flex-direction: column;
+  }
+  .map-frame{
+      width: 100%;
+  }
+}
+
+  @media screen and (max-width: 569px) {
+.main-text{
+    font-size: 36px;
+}
+.subtitle-container ul {
+    font-size: 12px;
+}
+.normal-size-title{
+    font-size: 36px;
+}
+.h3{
+    font-size: 14px;
+}
+h1{
+    font-size: 36px;
+}
+.subtitle-words{
+    font-size: 14px;
+}
+.button-title{
+    font-size: 16px;
+}
+.footer-container {
+    flex-direction: column;
+    margin: 10px;
+}
+.logo .footer-logo{
+    left: 28px;
+    margin-bottom: 30px;
+}
+.footer-lists{
+    margin-bottom: 25px;
+}
+.icons{
+    text-align: center;
+}
+  }
+
+
 
   @media screen and (max-width: 366px) {
     .prices{
         flex-direction: column;
+        align-items: center;
+    }
+    .prices ul{
+        padding:0px;
+    }
+    .workshop-vids{
+        max-width: 100%;
+    }
+    .extra {
+        max-width: 100%;
     }
   }

@@ -1,4 +1,6 @@
+<script>
 
+</script>
 <div class="navbar-test">
    <div class="navbar-background">
       <%= link_to root_path do %>
@@ -14,4 +16,27 @@
       </ul>
          <a class="button-green" href="https://clients.mindbodyonline.com/classic/ws?studioid=5720101&stype=-98" target="_blank">Book a class</a>
    </div>
+
+
+      <div class="nav">
+         <%= link_to root_path do %>
+         <span class="logo"><%= image_tag 'logo.jpg', class: "logo-size "%> </span>
+         <% end %> 
+      
+         <label for="toggle">&#9776;</label>
+         <input type="checkbox" id="toggle"></label>
+         <div class="menu">
+         <ul>
+         <li><%= link_to "Home", root_path %></li>
+         <li><%= link_to "About", about_path %></li>
+         <li><%= link_to "Classes", classes_path %></li>
+         <li> <%= link_to "Pricing", price_path %></li>
+         <li> <%= link_to "Workshop", store_path %></li>
+         <li> <%= link_to "Contact us", contact_path %></li>
+         </ul>
+      </div>
+
+   </div>
+
 </div>
+      <%# <i class="fa-solid fa-bars"></i> %>

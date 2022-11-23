@@ -1,6 +1,6 @@
 <div class="homepage-container">
 <p style="color: green"><%= notice %></p>
-<div class="section-title" style="font-size:45px">
+<div class="section-title normal-size-title">
 Workshops
 </div>
 <p class="subtitle-workshop">“Movement is the starting point for wiring the brain to learn.”</p>
@@ -8,9 +8,25 @@ Workshops
 <p class="subtitle" style="max-width: 890px;">
 Our workshops are focused on helping our students gain a deeper knowledge of their bodies; enabling them to improve their movements in and outside the classroom space. We touch on themes that we may not be able to cover during a normal weekly class and deepen both the experience and knowledge of the movement modality being covered during the workshop
 </p>
+
+<div class="workshops-video-container">
+<div class="video-cont">
+<div class="video-title">Dance</div>
+    <%= video_tag "", :size => "320x240", :controls => true, class: "workshop-vids" %>
 </div>
 
-<%# <%= link_to "New article", new_article_path %>
+<div class="video-cont">
+<div class="video-title">Pilates</div>
+    <%= video_tag "", :size => "320x240", :controls => true, class: "workshop-vids" %>
+</div>
+
+<div class="video-cont">
+<div class="video-title">Yoga</div>
+    <%= video_tag "", :size => "320x240", :controls => true, class: "workshop-vids" %>
+</div>
+</div>
+
+<%# <%= link_to "New article", new_article_path %> 
 
 <div id="articles">
   <% @articles.each do |article| %>
@@ -33,4 +49,5 @@ Our workshops are focused on helping our students gain a deeper knowledge of the
        </div>
    </div>
      <% end %>
+  </div>
   </div>
