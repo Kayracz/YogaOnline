@@ -25,6 +25,7 @@ h3{
 .main-text{
     margin-top: 41px;
     margin-bottom: 0px;
+    line-height: 35px;
 }
 .button-green{
     height: 32px;
@@ -482,7 +483,7 @@ margin-bottom: 10px;
 }
 #toggle:checked + .menu{
     display: block;
-    top: 85px;
+    top: 84px;
     position: absolute;
 }
 #toggle {
@@ -490,6 +491,45 @@ margin-bottom: 10px;
 }
 .normal-size-title{
     font-size:45px
+}
+.footer-logo{
+    width: 150px;
+    height: 67px;
+    position: relative;
+    top: 10px;
+    left: -27px;
+}
+.footer-lists{
+    list-style: none;
+    margin-right: 47px;
+    color:#dfdfdf;
+    font-weight: 300;
+    margin: 0px;
+}
+.footer-lists a{
+    text-decoration: none;
+    color:#dfdfdf;
+    font-weight: 300;
+}
+.footer{
+    background:#2e5a52;
+    padding:10px;
+}
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 50px;
+}
+.footer-title{
+    font-weight:400;
+}
+.icons{
+    font-size: 26px;
+}
+.icons a{
+    color:white;
+    text-decoration: none;
+    margin:5px;
 }
 
   /* Responsive columns - one column layout (vertical) on small screens */
@@ -516,12 +556,10 @@ margin-bottom: 10px;
         left: 10px;
     position: relative;
     }
-
     .homepage-container{
         padding: 0px 17px;
         margin-top: 121px;
     }
-
   }
   @media screen and (max-width: 760px) {
     .price-container{
@@ -593,6 +631,20 @@ h1{
 }
 .button-title{
     font-size: 16px;
+}
+.footer-container {
+    flex-direction: column;
+    margin: 10px;
+}
+.logo .footer-logo{
+    left: 28px;
+    margin-bottom: 30px;
+}
+.footer-lists{
+    margin-bottom: 25px;
+}
+.icons{
+    text-align: center;
 }
   }
 
