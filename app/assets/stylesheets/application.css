@@ -602,6 +602,7 @@ margin-bottom: 10px;
     .studio-section-two{
         flex-direction: column;
         align-items: center;
+<<<<<<< HEAD
     }
     .workshop-section{
         flex-direction: column;
@@ -615,6 +616,21 @@ margin-bottom: 10px;
     .image-studio-cont{
         margin: 0px;
     }
+=======
+    }
+    .workshop-section{
+        flex-direction: column;
+    }
+    .studio-musgrave {
+        margin-left: 0px;
+    }
+    .studio-westville{
+    margin-right:0px;
+    }
+    .image-studio-cont{
+        margin: 0px;
+    }
+>>>>>>> f402f5e0bd51b71eba527d41579d5640765cc98a
     .init-title{
         margin: 20px 0px 6px;
     }
@@ -633,6 +649,48 @@ margin-bottom: 10px;
   }
   .map-frame{
       width: 100%;
+<<<<<<< HEAD
+  }
+}
+
+  @media screen and (max-width: 569px) {
+.main-text{
+    font-size: 36px;
+}
+.subtitle-container ul {
+    font-size: 12px;
+}
+.normal-size-title{
+    font-size: 36px;
+}
+.h3{
+    font-size: 14px;
+}
+h1{
+    font-size: 36px;
+}
+.subtitle-words{
+    font-size: 14px;
+}
+.button-title{
+    font-size: 16px;
+}
+.footer-container {
+    flex-direction: column;
+    margin: 10px;
+}
+.logo .footer-logo{
+    left: 28px;
+    margin-bottom: 30px;
+}
+.footer-lists{
+    margin-bottom: 25px;
+}
+.icons{
+    text-align: center;
+}
+=======
+>>>>>>> f402f5e0bd51b71eba527d41579d5640765cc98a
   }
 }
 
@@ -676,6 +734,8 @@ h1{
 
 
 
+
+
   @media screen and (max-width: 366px) {
     .prices{
         flex-direction: column;
@@ -683,11 +743,15 @@ h1{
     }
     .prices ul{
         padding:0px;
+<<<<<<< HEAD
     }
     .workshop-vids{
         max-width: 100%;
     }
     .extra {
         max-width: 100%;
+=======
+>>>>>>> f402f5e0bd51b71eba527d41579d5640765cc98a
     }
+
   }
