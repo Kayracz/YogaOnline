@@ -108,7 +108,7 @@ color: #C5A840;
 text-transform: uppercase;
 font-family: 'Inter';
 letter-spacing: 5px;
-margin: 10px
+margin: 10px 0px
 }
 .section-container{
 background: #F2F2F2;
@@ -193,6 +193,10 @@ max-width: 614px;
 }
 .homepage-images{
 width: 100%;
+}
+.workshop-images{
+width: 100%;
+border-radius:4px;
 }
 .subtitle-words{
 color: #c5a840;
