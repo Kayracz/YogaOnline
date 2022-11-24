@@ -23,8 +23,8 @@
          </div>
          <ul class="info-li">
             <li>info@themovementspace.co.za</li>
-            <li> +27 735699075</li>
-            <li> @themovementspacesa</li>
+            <li>+27 735699075</li>
+            <li>@themovementspacesa</li>
          </ul>
       </div>
       <div style="margin:10px 0px;">
@@ -44,7 +44,41 @@
       <div style="font-weight:300;">
          Fill out your details here and we’ll get back to you soon.
       </div>
-      <a class="button-yellow" style="margin-top:20px;" href="https://api.whatsapp.com/send?phone=27735699075" target="_blank">Contact Us</a>
+<html>
+  <head>
+    <title>Email from website</title>
+    <style>
+      div {
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="mailto:info@themovementspace.co.za" method="get" enctype="text/plain">
+      <div>
+        <label for="name">Name:
+          <input type="text" name="name" id="name" />
+        </label>
+      </div>
+      <div>
+        <label for="email">Email:
+          <input type="text" name="email" id="email" />
+        </label>
+      </div>
+      <div>
+        <label>Comments:</label>
+        <br />
+        <textarea class="details-contact" name="comments" rows="12" cols="35">Please let us know here which movement class you are interested in and which studio you are closest to</textarea>
+      </div>
+      <div style="display:flex;">
+       <span style="margin-right:5px;">
+        <input type="submit" name="submit" value="Send" class="button-yellow"/>
+        </span>
+        <input type="reset" name="reset" value="Clear Form" class="button-yellow" />
+      </div>
+    </form>
+  </body>
+</html>
    </div>
 </div>
 </div>
