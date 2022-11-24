@@ -44,41 +44,55 @@
       <div style="font-weight:300;">
          Fill out your details here and we’ll get back to you soon.
       </div>
-<html>
-  <head>
-    <title>Email from website</title>
-    <style>
-      div {
-        margin-bottom: 10px;
-      }
-    </style>
-  </head>
-  <body>
-    <form action="mailto:info@themovementspace.co.za" method="get" enctype="text/plain">
-      <div>
-        <label for="name">Name:
-          <input autocomplete="on" type="text" name="name" id="name" />
-        </label>
+
+
+
+<div class="flex items-center min-h-screen bg-gray-50 dark:bg-gray-900" style="margin-top:20px">
+  <div class="container mx-auto">
+    <div class="max-w-md mx-auto my-10 bg-white p-5 rounded-md shadow-sm">
+      <div class="m-7">
+        <form action="https://api.web3forms.com/submit" method="POST" id="form">
+          <input type="hidden" name="access_key" value="b9e6f2c8-e4b0-4895-97da-1544b3a8d5e0" />
+          <input type="hidden" name="subject" value="New Submission from Web3Forms" />
+          <input type="hidden" name="redirect" value="https://web3forms.com/success" />
+          <input type="checkbox" name="botcheck" id="" style="display: none;" />
+
+          <div class="mb-6 questions">
+            <label for="name" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Full Name</label>
+            <input type="text" name="name" id="name" placeholder="John Doe" required class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" />
+          </div>
+
+          <div class="mb-6 questions">
+            <label for="email" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Email Address</label>
+            <input type="email" name="email" id="email" placeholder="your@email.com" required class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" />
+          </div>
+
+          <div class="mb-6 questions">
+            <label for="phone" class="text-sm text-gray-600 dark:text-gray-400">Phone Number</label>
+            <input type="text" name="phone" id="phone" placeholder="+1 (555) 1234-567" required class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" />
+          </div>
+
+          <div class="mb-6 questions">
+            <label for="message" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Your Message</label>
+            <textarea rows="5" name="message" id="message" placeholder="Please let us know here which movement class you are interested in and which studio you are closest to :)" class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" required></textarea>
+          </div>
+
+          <div class="mb-6 questions">
+            <button type="submit" class="button-green w-full px-3 py-4 text-white bg-indigo-500 rounded-md focus:bg-indigo-600 focus:outline-none">
+              Send Message
+            </button>
+          </div>
+          <p class="text-base text-center text-gray-400" id="result"></p>
+        </form>
       </div>
-      <div>
-        <label for="email">Email:
-          <input autocomplete="on" type="text" name="email" id="email" />
-        </label>
-      </div>
-      <div>
-        <label>Comments:</label>
-        <br />
-        <textarea class="details-contact" name="comments" rows="12" cols="35">Please let us know here which movement class you are interested in and which studio you are closest to</textarea>
-      </div>
-      <div style="display:flex;">
-       <span style="margin-right:5px;">
-        <input autocomplete="on" type="submit" name="submit" value="Send" class="button-yellow"/>
-        </span>
-        <input autocomplete="on" type="reset" name="reset" value="Clear Form" class="button-yellow" />
-      </div>
-    </form>
-  </body>
-</html>
-   </div>
+    </div>
+  </div>
 </div>
+
+
+
+
+
+</div>
+ </div>
 </div>
