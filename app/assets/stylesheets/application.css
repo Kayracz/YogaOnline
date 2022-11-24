@@ -45,6 +45,14 @@ h3{
     align-items: center;
     justify-content: center;
 }
+.button-nav:active {
+    transition: 100ms ease;
+    background-color: #267263;
+  }
+  .button-nav:hover {
+    top: 2px;
+    background-color: #267263;
+  }
 .button-green{
     height: 32px;
     max-width: 179px;
@@ -62,6 +70,14 @@ h3{
     align-items: center;
     justify-content: center;
 }
+.button-green:active {
+    transition: 100ms ease;
+    background-color: #267263;
+  }
+  .button-green:hover {
+    top: 2px;
+    background-color: #267263;
+  }
 .button-yellow{
     height: 32px;
     max-width: 104px;
@@ -78,6 +94,14 @@ h3{
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  .button-yellow:active {
+    transition: 100ms ease;
+  background: #b49628;
+  }
+  .button-yellow:hover {
+    top: 2px;
+    background-color: #b49628;
   }
 .init-title{
     font-size: 10px;
@@ -444,6 +468,9 @@ margin-top: 5px;
     font-weight: 300;
     font-family: 'Inter';
 }
+.size-green{
+    font-size: 18px;
+}
 .prices{
     display: flex;
     line-height: 40px;
@@ -725,6 +752,7 @@ h1{
 }
 .subtitle-words{
     font-size: 14px;
+    line-height: 19px;
 }
 .button-title{
     font-size: 16px;
@@ -765,5 +793,7 @@ h1{
     .extra {
         max-width: 100%;
     }
-
+    .size-green{
+        font-size: 16px;
+    }
   }
