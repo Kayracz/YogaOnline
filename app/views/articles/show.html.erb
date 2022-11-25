@@ -6,7 +6,7 @@
 
 <div>
   <%= link_to "Edit this article", edit_article_path(@article) %> |
-  <%= link_to "Back to articles", store_path %>
+  <%= link_to "Back to admin workshops", new_article_path(@article) %>
 
 <div style="display: flex;justify-content: center;margin-top: 23px;">
   <%= button_to "Destroy this article", @article, method: :delete, class: "button-green" %>

@@ -5,4 +5,33 @@
 <div style="margin-top:20px;">
   <%= link_to "Back to Workshop Page", store_path %>
 </div>
-</div>
+
+   <div class="line-cont">
+      <div class="line"></div>
+   </div>
+
+<h1>Articles on the page</h1>
+<div id="articles">
+  <% @articles.each do |article| %>
+  <div class="workshop-section">
+      <div class="studio-westville">
+         <div class="image-studio-cont">
+          <%= cl_image_tag article.photo.key, class: "workshop-images" %>
+         </div>
+      </div>
+      <div class="studio-two">
+         <div class="init-title">
+            Our Workshops
+         </div>
+         <div class="section-title">
+            <%= article.title %>
+         </div>
+         <div class="section-text">
+          <%= article.description %>
+         </div>
+          <%= link_to "Show this article", article %>
+       </div>
+   </div>
+     <% end %>
+  </div>
+  </div>

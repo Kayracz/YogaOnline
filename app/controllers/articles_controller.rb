@@ -32,6 +32,7 @@ class ArticlesController < ApplicationController
 
   # GET /articles/new
   def new
+    @articles = Article.all
     @article = Article.new
   end
 
