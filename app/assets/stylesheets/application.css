@@ -227,12 +227,19 @@ align-items: center;
 .studio-westville{
 margin-right: 50px;
 }
+.workshops{
+margin-right: 50px;
+}
 .studio-musgrave{
 margin-left: 50px;
 }
 .studio-two{
 max-width: 500px;
 text-align: left;
+}
+.image-workshops{
+margin: 0 auto;
+max-width: 331px;
 }
 .image-studio-cont{
 margin: 0 auto;
@@ -416,7 +423,7 @@ font-weight: 700;
 display: flex;
 padding: 25px;
 margin: 0 auto;
-max-width: 900px;
+max-width: 976px;
 }
 .workshops-video-container{
 display: flex;
@@ -709,8 +716,8 @@ align-items: center;
 flex-direction: column;
 align-items: center;
 }
-.workshop-section{
-flex-direction: column;
+.workshop-lineup{
+text-align: center;
 }
 .studio-musgrave {
 margin-left: 0px;
@@ -720,6 +727,7 @@ margin-right:0px;
 }
 .image-studio-cont{
 margin: 0px;
+max-width: 100%;
 }
 .init-title{
 margin: 20px 0px 6px;
@@ -730,6 +738,19 @@ flex-direction: column;
 .info-container{
 width:100%;
 }
+.workshop-section{
+    flex-direction: column;
+    align-items: center;
+    }
+    .workshops{
+     margin-right:0px;
+    }
+    .image-workshops{
+    max-width: 100%;
+    }
+    .workshop-vids{
+        max-width: 100%;
+    }
 }
 @media screen and (max-width: 600px) {
 .map-container{
@@ -776,6 +797,15 @@ margin-bottom: 25px;
 .icons{
 text-align: center;
 }
+/* .workshop-section{
+flex-direction: column;
+}
+.workshops{
+ margin-right:0px;
+}
+.image-workshops{
+max-width: 100%;
+} */
 }
 @media screen and (max-width: 569px) {
 .main-text{
